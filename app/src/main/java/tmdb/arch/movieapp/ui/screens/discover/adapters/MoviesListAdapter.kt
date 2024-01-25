@@ -1,6 +1,7 @@
 package tmdb.arch.movieapp.ui.screens.discover.adapters
 
 import android.view.ViewGroup
+import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
@@ -11,7 +12,7 @@ import tmdb.arch.movieapp.utils.SimpleDiffCallback
 import tmdb.arch.movieapp.utils.delegates.viewBinding
 
 class MoviesListAdapter :
-    ListAdapter<Movie, MoviesListAdapter.MovieViewHolder>(SimpleDiffCallback<Movie>()) {
+    PagingDataAdapter<Movie, MoviesListAdapter.MovieViewHolder>(SimpleDiffCallback<Movie>()) {
 
     class MovieViewHolder(private val binding: MovieListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {

@@ -3,4 +3,6 @@
     <string name="search">Search</string>
     <string name="poster_of_the_movie">Poster of the movie</string>
     <string name="error_msg">Something went wrong</string>
+    <string name="error_loading_movies">An error has occured while trying to load movies. Please try again</string>
+    <string name="retry">Retry</string>
 </resources>

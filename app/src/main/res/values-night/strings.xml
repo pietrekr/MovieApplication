@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="error_msg">Something went wrong</string>
+    <string name="error_loading_movies">An error has occured while trying to load movies. Please try again</string>
+    <string name="retry">Retry</string>
 </resources>
