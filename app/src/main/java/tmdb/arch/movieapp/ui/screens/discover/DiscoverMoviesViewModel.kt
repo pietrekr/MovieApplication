@@ -7,8 +7,9 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import tmdb.arch.movieapp.domain.repository.MoviesRepository
 
-class DiscoverMoviesViewModel : ViewModel() {
+class DiscoverMoviesViewModel(private val service: MoviesRepository) : ViewModel() {
 
     private val _text = MutableStateFlow("Hello world")
     val text: StateFlow<String> get() = _text.asStateFlow()
@@ -20,7 +21,8 @@ class DiscoverMoviesViewModel : ViewModel() {
             delay(5000)
 
             _text.emit("Hello World")
-        }
 
+            service.getLatestMovies()
+        }
     }
 }
