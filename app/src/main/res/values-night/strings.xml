@@ -3,4 +3,6 @@
     <string name="error_msg">Something went wrong</string>
     <string name="error_loading_movies">An error has occured while trying to load movies. Please try again</string>
     <string name="retry">Retry</string>
+    <string name="hint_enter_text">Enter text</string>
+    <string name="error_could_not_find_movie">Could not find any movie matching your criteria</string>
 </resources>

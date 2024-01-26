@@ -12,7 +12,7 @@
             android:id="@+id/discoverMovies_to_savedMovies"
             app:destination="@id/savedMovies" />
         <action
-            android:id="@+id/action_discoverMovies_to_searchMovies"
+            android:id="@+id/discoverMovies_to_searchMovies"
             app:destination="@id/searchMovies" />
         <action
             android:id="@+id/discoverMovies_to_movieDetails"

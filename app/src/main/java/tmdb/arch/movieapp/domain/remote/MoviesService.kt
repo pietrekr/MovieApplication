@@ -18,4 +18,9 @@ interface MoviesService {
         )
             .format(Date()),
     ): MovieListResponse
+
+    @GET("search/movie")
+    suspend fun findMovies(
+        @Query("query") query: String,
+    ): MovieListResponse
 }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ConcatAdapter
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -43,11 +44,14 @@ class DiscoverMovies : Fragment(R.layout.movies_discover) {
     }
 
     private fun initViews() {
+        binding.searchButton.setOnClickListener {
+            findNavController().navigate(DiscoverMoviesDirections.discoverMoviesToSearchMovies())
+        }
+
         binding.listView.adapter = ConcatAdapter(
             listRefreshStateAdapter,
             listAdapter,
             listStateAdapter,
-
         )
     }
 
