@@ -7,4 +7,9 @@
     <string name="retry">Retry</string>
     <string name="hint_enter_text">Enter text</string>
     <string name="error_could_not_find_movie">Could not find any movie matching your criteria</string>
+    <string name="star_icon">star icon</string>
+    <string name="favorite">Favorite</string>
+    <string name="to_watch">To Watch</string>
+    <string name="overview">OVERVIEW</string>
+    <string name="eye_icon">eye icon</string>
 </resources>

@@ -5,7 +5,7 @@ import tmdb.arch.movieapp.domain.model.Movie
 fun MovieDto.toModel(): Movie = Movie(
     adult = this.adult,
     backdropPath = this.backdropPath,
-    genreIds = this.genreIds,
+    genres = this.genres?.map(MovieDto.GenreDto::name),
     id = this.id,
     originalLanguage = this.originalLanguage,
     originalTitle = this.originalTitle,
@@ -16,5 +16,5 @@ fun MovieDto.toModel(): Movie = Movie(
     title = this.title,
     video = this.video,
     voteAverage = this.voteAverage,
-    voteCount = this.voteCount,
+    voteCount = this.voteCount
 )
